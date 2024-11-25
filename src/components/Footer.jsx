@@ -6,7 +6,7 @@ const Footer = () => {
       {/* Name Section */}
       <aside className="text-center">
         <h1 className="text-3xl font-bold">Nikhil Tiwari</h1>
-        <p className="text-sm italic">Building the future, one line of code at a time.</p>
+        <p className="text-sm italic">Established 2006.</p>
       </aside>
 
       {/* Social Links */}

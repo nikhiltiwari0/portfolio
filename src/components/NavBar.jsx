@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-md">
+    <div className="navbar bg-base-100 shadow-md z-[10] relative">
       {/* Navbar Start */}
       <div className="navbar-start flex items-center">
         {/* Dropdown for Mobile */}
@@ -25,38 +25,73 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>ABOUT ME</a>
+              <button
+                onClick={() => (window.location.href = "/about")}
+                className="btn btn-ghost"
+              >
+                ABOUT ME
+              </button>
             </li>
             <li>
-              <a>PROJECTS</a>
+              <button
+                onClick={() => (window.location.href = "/projects")}
+                className="btn btn-ghost"
+              >
+                PROJECTS
+              </button>
             </li>
             <li>
-              <a>RESUMÉ</a>
+              <button
+                onClick={() => (window.location.href = "/resume")}
+                className="btn btn-ghost"
+              >
+                RESUMÉ
+              </button>
             </li>
           </ul>
         </div>
         {/* Brand/Logo */}
-        <a className="btn btn-ghost normal-case text-xl">Nikhil Tiwari</a>
+        <button
+          onClick={() => (window.location.href = "/")}
+          className="btn btn-ghost normal-case text-xl"
+        >
+          NIKHIL TIWARI
+        </button>
       </div>
 
       {/* Navbar End */}
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-4">
+        <ul className="menu menu-horizontal px-4 z-[50] relative">
           <li>
             <details>
               <summary>WHO AM I?</summary>
-              <ul className="p-2 bg-base-100 shadow-md rounded-box">
+              <ul className="p-2 bg-base-100 shadow-md rounded-box z-[50]">
                 <li>
-                  <a>ABOUT ME</a>
+                  <button
+                    onClick={() => (window.location.href = "/about")}
+                    className="btn btn-ghost"
+                  >
+                    ABOUT ME
+                  </button>
                 </li>
                 <li>
-                  <a>PROJECTS</a>
+                  <button
+                    onClick={() => (window.location.href = "/projects")}
+                    className="btn btn-ghost"
+                  >
+                    PROJECTS
+                  </button>
                 </li>
                 <li>
-                  <a>RESUMÉ</a>
+                  <button
+                    onClick={() => (window.location.href = "/resume")}
+                    className="btn btn-ghost"
+                  >
+                    RESUMÉ
+                  </button>
                 </li>
               </ul>
             </details>
