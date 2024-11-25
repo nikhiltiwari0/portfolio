@@ -28,7 +28,7 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>EDUCATION</a>
+              <a>ABOUT ME</a>
             </li>
             <li>
               <a>PROJECTS</a>
@@ -50,7 +50,7 @@ const NavBar = () => {
               <summary>WHO AM I?</summary>
               <ul className="p-2 bg-base-100 shadow-md rounded-box">
                 <li>
-                  <a>EDUCATION</a>
+                  <a>ABOUT ME</a>
                 </li>
                 <li>
                   <a>PROJECTS</a>

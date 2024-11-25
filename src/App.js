@@ -1,20 +1,23 @@
-import "./App.css";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import NavBar from "./components/NavBar"; // Adjust the path as needed
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import React from "react";
+import ResumePage from "./pages/ResumePage";
 
 function App() {
   return (
-    <div>
+    <Router>
       <NavBar />
-      <main className="p-8 lg:px-16">
-        <h1>Welcome to My Website</h1>
-        <p>
-          I am going to be updating this frequently with both updates to the
-          looks, and updates in general as life goes on!
-        </p>
+      <main className="p-4">
+        <Routes>
+          <Route path="/" element={<h1>Welcome to My Website</h1>} />
+          
+          <Route path="/resume" element={<ResumePage />} />
+        </Routes>
       </main>
-    </div>
+      <Footer />
+    </Router>
   );
 }
 

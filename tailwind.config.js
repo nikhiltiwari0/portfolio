@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/components/navBar.{js,jsx,ts,tsx}", // Adjust this based on your file structure
+    "./src/components/navBar.{js,jsx,ts,tsx}",
+    "./src/components/Footer.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
