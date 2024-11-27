@@ -44,7 +44,7 @@ function App() {
                     Welcome.
                   </h1>
                     <p className="mt-4 text-lg text-white animate__animated animate__fadeIn animate__delay-2s">
-                      I’m <strong className="text-cyan-500">Nikhil Tiwari</strong>, a sophomore at UW-Madison
+                      I’m <strong className=" text-cyan-500 animation: changeColor 1s infinite alternate;">Nikhil Tiwari</strong>, a sophomore at UW-Madison
                       building software that makes an <strong className="text-cyan-500">impact</strong> in people's lives.
                     </p>
                   </div>
