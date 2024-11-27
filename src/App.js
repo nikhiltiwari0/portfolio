@@ -18,9 +18,11 @@ function App() {
             <Route
               path="/"
               element={
-                <div className="p-4">
-                  <h1 className="text-3xl font-bold">Welcome to My Website</h1>
-                  <p className="mt-2">This is the main landing page.</p>
+                <div className="p-4 text-right">
+                  <h1 className="text-3xl font-bold text-center ">Welcome to My Website</h1>
+                  <p className="mt-2 ">I’m Nikhil Tiwari, a sophomore at UW-Madison building software that actually makes an impact in peoples lives.<br></br>
+                    I've worked on various projects, many of which use AI, and I'm always looking for new opportunities to learn and grow.<br></br>
+                    Skilled in React, TypeScript, and Firebase, I focus on creating practical, user-driven solutions that make a difference.</p>
                 </div>
               }
             />
