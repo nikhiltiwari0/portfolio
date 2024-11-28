@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import ProjectsPage from "./pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
             />
             <Route path="/resume" element={<ResumePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
           </Routes>
         </main>
         <Footer />

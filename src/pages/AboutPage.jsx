@@ -1,3 +1,5 @@
+import "animate.css";
+
 import React from "react";
 
 const AboutPage = () => {

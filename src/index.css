@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+.pdf-viewer-container {
+  background-color: transparent !important;
+}
+
+.pdf-viewer-container .rpv-core__viewer {
+  background-color: transparent !important;
+}
+
 /* Hero Section */
 .hero-section {
   max-width: 900px;
