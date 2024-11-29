@@ -8,7 +8,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
       </h2>
       <div className="skills-grid mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-          <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+          <div className="p-3 bg-transparent rounded-lg w-fit">
             <img
               alt="React logo"
               src="./react.svg"
@@ -24,7 +24,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
         </div>
 
         <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-      <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+      <div className="p-3 bg-transparent rounded-lg w-fit">
         <img
           alt="TypeScript logo"
           src="./typescript.svg"
@@ -38,7 +38,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
     </div>
 
     <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-      <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+      <div className="p-3 bg-transparent rounded-lg w-fit">
         <img
           alt="Python logo"
           src="./Python.png"
@@ -52,7 +52,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
     </div>
 
     <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-      <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+      <div className="p-3 bg-transparent rounded-lg w-fit">
         <img
           alt="Firebase logo"
           src="./firebase.png"
@@ -66,7 +66,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
     </div>
 
     <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-      <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+      <div className="p-3 bg-transparent rounded-lg w-fit">
         <img
           alt="Java logo"
           src="./java.png"
@@ -79,7 +79,7 @@ const SkillCards = (name) => { // just here so I dont have to do this each time,
       </div>
     </div>
     <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
-      <div className="p-3 bg-[#0ACF83]/20 rounded-lg w-fit">
+      <div className="p-3 bg-transparent rounded-lg w-fit">
         <img
           alt="Nodejs logo"
           src="./nodejs.svg"
