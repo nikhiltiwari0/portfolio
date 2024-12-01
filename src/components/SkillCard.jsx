@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillCards = (name) => { // just here so I dont have to do this each time, but try to figure out how to make so I can just do one by one? 
   return (
-    <div className="skills-section mt-20 text-center px-6 max-w-screen-xl mx-auto">
+    <div className="skills-section mt-10 text-center px-6 max-w-screen-xl mx-auto">
       <h2 className="text-3xl font-semibold text-white text-center">
         Skills
       </h2>
