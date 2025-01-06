@@ -14,6 +14,7 @@ class ChatGPTClient:
         }
 
     def send_message(self, message, model="gemini-model"):
+        print("Hi")
         payload = {
             "model": model,
             "messages": [{"role": "user", "content": message}],
@@ -37,7 +38,7 @@ def main():
     print("MINIME CLI (type 'quit' to exit)")
     print("---------------------------------")
 
-    while True:
+    while True: 
         user_input = input("You: ")
         
         if user_input.lower() == 'quit':

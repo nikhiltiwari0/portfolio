@@ -7,7 +7,7 @@ const AboutPage = () => {
     const [response, setResponse] = useState('');
 
     const sendMessage = async () => {
-        const res = await fetch('/api/chat', {
+        const res = await fetch('/about', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

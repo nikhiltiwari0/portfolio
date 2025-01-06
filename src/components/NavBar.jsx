@@ -31,7 +31,7 @@ const NavBar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[50] mt-3 w-52 p-2 shadow"
           >
-            <li>
+            {/* <li>
               <button
                 onClick={() => (window.location.href = "/about")}
                 className="btn btn-ghost"
@@ -46,7 +46,7 @@ const NavBar = () => {
               >
                 PROJECTS
               </button>
-            </li>
+            </li> */}
             <li>
               <button
                 onClick={() => (window.location.href = "/resume")}
@@ -76,7 +76,7 @@ const NavBar = () => {
             <details>
               <summary>WHO AM I?</summary>
               <ul className="p-2 bg-base-100 shadow-md rounded-box z-[50]">
-                <li>
+                {/* <li>
                   <button
                     onClick={() => (window.location.href = "/about")}
                     className="btn btn-ghost"
@@ -91,7 +91,7 @@ const NavBar = () => {
                   >
                     PROJECTS
                   </button>
-                </li>
+                </li> */}
                 <li>
                   <button
                     onClick={() => (window.location.href = "/resume")}
