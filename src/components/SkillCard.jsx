@@ -1,12 +1,12 @@
 import React from "react";
 
-const SkillCards = (name) => { // just here so I dont have to do this each time, but try to figure out how to make so I can just do one by one? 
+const SkillCards = (name) => { 
   return (
-    <div className="skills-section mt-10 text-center px-6 max-w-screen-xl mx-auto">
-      <h2 className="text-3xl font-semibold text-white text-center">
+    <div className="skills-section mt-0 text-center px-0 mx-auto">
+      <h2 className="text-3xl font-semibold text-white text-center mb-8 w-full">
         Skills
       </h2>
-      <div className="skills-grid mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="skills-grid grid grid-cols-1 sm:grid-cols-3 gap-8">
         <div className="flex flex-1 gap-5 p-4 rounded-xl border border-[#FAFAFA] dark:border-gray-800 bg-[#FAFAFA] dark:bg-gray-800 hover:bg-[#F2F2F2] dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-200">
           <div className="p-3 bg-transparent rounded-lg w-fit">
             <img

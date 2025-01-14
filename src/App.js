@@ -12,22 +12,35 @@ import SkillCard from "./components/SkillCard";
 
 function App() {
   useEffect(() => {
+    const lightString = [];
+    const colors = ["#ff0000", "#00ff00", "#0000ff"]; // RGB colors
+
+    for (let i = 0; i < 20; i++) {
+      const light = document.createElement("div");
+      light.className = "light";
+      light.style.backgroundColor = colors[i % colors.length];
+      document.body.appendChild(light);
+      lightString.push(light);
+    }
+
     const handleMouseMove = (e) => {
       const mouseX = e.clientX;
       const mouseY = e.clientY;
 
-      // Make sure the element exists before getting its style
-      const background = document.getElementById('background') || document.body;
-
-      if (background) {
-        background.style.background = `radial-gradient(circle at ${mouseX}px ${mouseY}px, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, .99))`;
-      }
+      lightString.forEach((light, index) => {
+        const delay = index * 50; // Increase delay for smoother effect
+        setTimeout(() => {
+          light.style.left = `${mouseX}px`;
+          light.style.top = `${mouseY}px`;
+        }, delay);
+      });
     };
 
     document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
+      lightString.forEach((light) => document.body.removeChild(light));
     };
   }, []);
 
@@ -50,18 +63,18 @@ function App() {
                         building software that makes an <strong className="text-cyan-500">impact</strong> in people's lives.
                       </p>
                     </div>
-                    <div className="skills-grid mt-5 grid grid-cols-3 gap-6">
+                    <div className="skills-grid grid grid-cols-3 gap-6">
 
                     </div>
-                    <div className="skills-section mt-5 text-center animate__animated animate__fadeIn animate__delay-3s">
+                    <div className="skills-section animate__animated animate__fadeIn animate__delay-3s">
                       <SkillCard></SkillCard>
                     </div>
 
-                    <div className="scroll-indicator mt-16">
+                    {/* <div className="scroll-indicator mt-16">
                       <p className="text-lg text-white animate__animated animate__fadeIn animate__delay-4s">
                         Scroll down to learn more
                       </p>
-                    </div>
+                    </div> */}
                   </div>
               }
             />

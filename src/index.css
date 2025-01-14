@@ -24,8 +24,7 @@ body {
 
 /* Skills Section Styling - Make it smaller and more compact */
 .skills-section {
-  max-width: 600px; /* Limit the width to make it smaller */
-  margin: 20px auto; /* Center it with some margin */
+  margin: auto; /* Center it with some margin */
   padding: 20px; /* Add some padding around the content */
   display: flex;
   flex-wrap: wrap;

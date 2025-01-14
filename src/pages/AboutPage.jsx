@@ -19,8 +19,8 @@ const AboutPage = () => {
     };
 
     return (
-        <div>
-            <h1>About Page</h1>
+        <div className="p-4">
+            {/* <h1>About Page</h1>
             <input
                 type="text"
                 value={message}
@@ -28,7 +28,8 @@ const AboutPage = () => {
                 placeholder="Type your message"
             />
             <button onClick={sendMessage}>Send</button>
-            <p>MINIME: {response}</p>
+            <p>MINIME: {response}</p> */}
+            <h1>COMING SOON...</h1>
         </div>
     );
 };

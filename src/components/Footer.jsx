@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-neutral text-neutral-content p-10">
+    <footer className="footer bg-inherit text-neutral-content p-10 flex justify-between">
       {/* Name Section */}
       <aside className="text-center">
         <h1 className="text-3xl font-bold">Nikhil Tiwari</h1>
@@ -10,8 +10,8 @@ const Footer = () => {
       </aside>
 
       {/* Social Links */}
-      <nav className="mt-6">
-        <h6 className="footer-title text-center">Connect with Me</h6>
+      <nav className="">
+        <h1 className="footer-title text-xl text-center">Connect with Me</h1>
         <div className="flex justify-center gap-4 mt-2">
           {/* GitHub */}
           <a href="https://github.com/nikhiltiwari0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
