@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import ProjectsPage from "./pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
-import SkillCard from "./components/SkillCard";
+import SkillCard from "./components/SkillCards";
 
 function App() {
   useEffect(() => {
@@ -58,9 +58,9 @@ function App() {
                       <h1 className="text-5xl font-semibold text-center text-white animate__animated animate__fadeIn animate__delay-1s" style={{ fontSize: '4rem' }}>
                         Welcome.
                       </h1>
-                      <p className="mt-4 text-lg text-white animate__animated animate__fadeIn animate__delay-2s">
-                        I’m <strong className=" text-cyan-500 animation: changeColor 1s infinite alternate;">Nikhil Tiwari</strong>, a sophomore at UW-Madison <br></br>
-                        building software that makes an <strong className="text-cyan-500">impact</strong> in people's lives.
+                      <p className="mt-6 text-lg text-white animate__animated animate__fadeIn animate__delay-2s">
+                        I’m <strong className=" text-gray-300 animation: changeColor 1s infinite alternate;">Nikhil Tiwari</strong>, a sophomore at UW-Madison <br></br>
+                        building software that makes an impact in people's lives.
                       </p>
                     </div>
                     <div className="skills-grid grid grid-cols-3 gap-6">

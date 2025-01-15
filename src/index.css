@@ -51,13 +51,10 @@ body {
 /* Skill Button Styling */
 .skill-button {
   font-size: 0.9rem; /* Smaller font size */
-  font-weight: bold;
-  text-transform: uppercase;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
   color: white;
-  padding: 10px 15px; /* Reduce padding for smaller buttons */
   background-color: transparent;
   border: 2px solid #fff; /* Button border */
   border-radius: 8px; /* Rounded corners */
@@ -80,8 +77,8 @@ body {
 
 /* Skill Button Hover Styling */
 .skill-button:hover {
-  background-color: #b0b0b0; /* Silver background on hover */
   transform: scale(1.1);
+  background-color: #a9a9a9; /* Slightly darker gray on hover */
   color: black; /* Text color changes to black on hover */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6); /* Black glow */
 }
