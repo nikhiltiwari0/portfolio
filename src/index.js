@@ -1,27 +1,26 @@
 import App from './App';
-import { PostHogProvider } from 'posthog-js/react'
-// src/index.js
+import { PostHogProvider } from 'posthog-js/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import posthog from 'posthog-js';
 import reportWebVitals from './reportWebVitals';
 
-const options = {
-  api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
-}
+posthog.init(process.env.REACT_APP_PUBLIC_POSTHOG_KEY || 'phc_uJwbqUWmjZq2DvltO3NnlANnUJDXQCk6GCd8SJa0JWc', {
+  api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+  persistence: 'cookie', 
+  loaded: (posthogInstance) => {
+    console.log('PostHog initialized:', posthogInstance);
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PostHogProvider 
-      apiKey={process.env.REACT_APP_PUBLIC_POSTHOG_KEY}
-      options={options}
-    >
+    <PostHogProvider client={posthog}>
       <App />
     </PostHogProvider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Measure performance (optional)
+reportWebVitals(console.log);
