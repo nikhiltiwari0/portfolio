@@ -1,3 +1,5 @@
+import './index.css';
+
 import App from './App';
 import { PostHogProvider } from 'posthog-js/react';
 import React from 'react';
