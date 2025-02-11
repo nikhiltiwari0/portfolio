@@ -1,5 +1,6 @@
 import './index.css';
 
+import { Analytics } from "@vercel/analytics/react"
 import App from './App';
 import { PostHogProvider } from 'posthog-js/react';
 import React from 'react';
@@ -18,9 +19,10 @@ posthog.init(process.env.REACT_APP_PUBLIC_POSTHOG_KEY || 'phc_uJwbqUWmjZq2DvltO3
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PostHogProvider client={posthog}>
-      <App />
-    </PostHogProvider>
+      <PostHogProvider client={posthog}>
+        <App />
+        <Analytics/>
+      </PostHogProvider>
   </React.StrictMode>
 );
 

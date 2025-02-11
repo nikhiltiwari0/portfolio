@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import AboutPage from "./pages/AboutPage";
+import { Analytics } from "@vercel/analytics/react"
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import ProjectsPage from "./pages/ProjectsPage";

@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class ChatGPTClient:
+class chatbotClient:
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY")
         self.endpoint = "https://api.gemini.com/v1/chat"
@@ -14,7 +14,6 @@ class ChatGPTClient:
         }
 
     def send_message(self, message, model="gemini-model"):
-        print("Hi")
         payload = {
             "model": model,
             "messages": [{"role": "user", "content": message}],
@@ -33,7 +32,7 @@ class ChatGPTClient:
             return f"Error: {str(e)}"
 
 def main():
-    chatbot = ChatGPTClient()
+    chatbot = chatbotClient()
 
     print("MINIME CLI (type 'quit' to exit)")
     print("---------------------------------")
@@ -46,7 +45,7 @@ def main():
             break
             
         response = chatbot.send_message(user_input)
-        print(f"ChatGPT: {response}")
+        print(f"Chatbot: {response}")
 
 if __name__ == "__main__":
     main()

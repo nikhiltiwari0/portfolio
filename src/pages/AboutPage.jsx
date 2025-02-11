@@ -28,8 +28,9 @@ const AboutPage = () => {
                 placeholder="Type your message"
             />
             <button onClick={sendMessage}>Send</button>
-            <p>MINIME: {response}</p> */}
-            <h1>COMING SOON...</h1>
+            <p>MINIME: {response}</p>
+             */}
+            <h1>COMING SOON..</h1>
         </div>
     );
 };
