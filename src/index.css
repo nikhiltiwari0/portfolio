@@ -32,7 +32,6 @@ body {
   gap: 15px; /* Space between each skill button */
   opacity: 0; /* Initially hidden */
   transform: translateY(20px); /* Slightly offset initially */
-  wait: 5s; /* Delay for fade-in animation */
   animation: fadeInUp 1s forwards; /* Apply fade-in animation */
 }
 
@@ -53,7 +52,7 @@ body {
   font-size: 0.9rem; /* Smaller font size */
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease, 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
   color: white;
   background-color: transparent;
   border: 2px solid #fff; /* Button border */
@@ -102,20 +101,142 @@ body {
 }
 
 /* Ensure text glows initially for the Homepage */
-.hero-section h1, .hero-section p, .scroll-section  {
+.hero-section h1, .hero-section p, .scroll-section {
   color: white;
   font-size: 1.5rem;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.4), 0 0 5px rgba(255, 255, 255, 0.3);
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* ::selection - Highlighted Text */
-::selection {
-  color: #222222;
-  text-shadow: none;
-}
-
 /* Tailwind CSS Integration */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  margin-left: 40px; /* Space between date and project card */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%; /* Ensure the project card takes full width */
+  position: relative; /* Set position to relative for absolute positioning of child elements */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Color coding */
+.project-card.android {
+  border-left: 5px solid green; /* Green for Android apps */
+}
+
+.project-card.website {
+  border-left: 5px solid blue; /* Blue for websites */
+}
+
+.project-card.backend {
+  border-left: 5px solid red; /* Red for backend projects */
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.project-details {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.project-description {
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.project-license {
+  font-size: 0.85rem;
+  color: #ffcc00; /* Highlight license */
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px; /* Adjust this value to move the line to the left */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line width */
+  background: #cccccc; /* Line color */
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin: 20px 0;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -120px; /* Adjust as needed for spacing */
+  top: 20px; /* Adjust as needed for spacing */
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.btn-small {
+  padding: 5px 10px; /* Smaller padding */
+  font-size: 0.8rem; /* Smaller font size */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-small:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.github-link {
+  position: absolute; /* Position the link absolutely */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.btn-github {
+  display: inline-block;
+  padding: 5px 10px; /* Padding for the button */
+  font-size: 0.9rem; /* Font size */
+  background-color: #24292e; /* GitHub dark color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.btn-github:hover {
+  background-color: #3b4045; /* Lighter shade n hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
