@@ -1,0 +1,185 @@
+.projects-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for modern look */
+    color: #ffffff;
+    padding: 80px 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.projects-roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* For roadmap line positioning */
+}
+
+.projects-roadmap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; /* Roadmap line width */
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #6a5acd, rgba(255,255,255,0)); /* Gradient line */
+    opacity: 0.7;
+}
+
+.roadmap-item {
+    display: flex;
+    justify-content: flex-start; /* Default to left */
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative; /* For connector positioning */
+}
+
+.roadmap-item.right {
+    justify-content: flex-end;
+}
+
+.roadmap-connector {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: transparent; /* Inherits from roadmap line */
+}
+
+.roadmap-item.left .roadmap-connector {
+    left: calc(50% - 1px); /* Center align */
+}
+
+.roadmap-item.right .roadmap-connector {
+    right: calc(50% - 1px); /* Center align */
+}
+
+
+.project-card {
+    background-color: #1e1e1e; /* Darker card background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    width: 45%; /* Adjust card width as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For pseudo-element circle */
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6a5acd; /* Roadmap point color */
+    box-shadow: 0 0 0 4px #1e1e1e; /* Circle border */
+    z-index: 1; /* Ensure circle is above connector */
+}
+
+.roadmap-item.left .project-card {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.roadmap-item.left .project-card::before {
+    left: -40px; /* Position circle to the left of card */
+}
+
+.roadmap-item.right .project-card {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.roadmap-item.right .project-card::before {
+    right: -40px; /* Position circle to the right of card */
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.project-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.project-details .detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-details svg {
+    color: #6a5acd; /* Icon color */
+}
+
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6a5acd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #ffffff;
+}
+
+.project-links svg {
+    color: #6a5acd; /* Icon color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+    .projects-roadmap {
+        width: 95%;
+    }
+    .project-card {
+        width: 80%; /* Full width cards on smaller screens */
+    }
+    .roadmap-item.left .project-card,
+    .roadmap-item.right .project-card {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center; /* Center text on smaller screens */
+    }
+    .roadmap-item.left,
+    .roadmap-item.right {
+        justify-content: center; /* Center cards */
+    }
+    .roadmap-item.left .project-card::before,
+    .roadmap-item.right .project-card::before {
+        left: 50%; /* Center circle */
+        transform: translateX(-50%) translateY(-50%);
+        top: -30px; /* Position circle above card */
+    }
+    .projects-roadmap::before {
+        left: 50%; /* Center roadmap line */
+    }
+}
