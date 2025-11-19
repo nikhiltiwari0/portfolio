@@ -24,15 +24,22 @@ body {
 
 /* Skills Section Styling - Make it smaller and more compact */
 .skills-section {
-  margin: auto; /* Center it with some margin */
-  padding: 20px; /* Add some padding around the content */
+  margin: auto;
+  /* Center it with some margin */
+  padding: 20px;
+  /* Add some padding around the content */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items */
-  gap: 15px; /* Space between each skill button */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Slightly offset initially */
-  animation: fadeInUp 1s forwards; /* Apply fade-in animation */
+  justify-content: center;
+  /* Center items */
+  gap: 15px;
+  /* Space between each skill button */
+  opacity: 0;
+  /* Initially hidden */
+  transform: translateY(20px);
+  /* Slightly offset initially */
+  animation: fadeInUp 1s forwards;
+  /* Apply fade-in animation */
 }
 
 /* Animation for Fade-In */
@@ -41,6 +48,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -49,21 +57,28 @@ body {
 
 /* Skill Button Styling */
 .skill-button {
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.9rem;
+  /* Smaller font size */
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
   color: white;
   background-color: transparent;
-  border: 2px solid #fff; /* Button border */
-  border-radius: 8px; /* Rounded corners */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(10px); /* Slightly offset initially */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for fade-in */
+  border: 2px solid #fff;
+  /* Button border */
+  border-radius: 8px;
+  /* Rounded corners */
+  opacity: 0;
+  /* Initially hidden */
+  transform: translateY(10px);
+  /* Slightly offset initially */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Transition for fade-in */
 }
 
 .skill-button:nth-child(1) {
-  animation: fadeInUp 1s forwards 0.1s; /* Delay for each button */
+  animation: fadeInUp 1s forwards 0.1s;
+  /* Delay for each button */
 }
 
 .skill-button:nth-child(2) {
@@ -77,9 +92,12 @@ body {
 /* Skill Button Hover Styling */
 .skill-button:hover {
   transform: scale(1.1);
-  background-color: #a9a9a9; /* Slightly darker gray on hover */
-  color: black; /* Text color changes to black on hover */
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6); /* Black glow */
+  background-color: #a9a9a9;
+  /* Slightly darker gray on hover */
+  color: black;
+  /* Text color changes to black on hover */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
+  /* Black glow */
 }
 
 /* Text Glow - Constant Glow for Skills */
@@ -91,8 +109,10 @@ body {
 
 /* Hover Glow - Changes to Black Text Color and Black Glow on Hover */
 .text-glow:hover {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6); /* Black glow */
-  color: black; /* Changes text color to black on hover */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
+  /* Black glow */
+  color: black;
+  /* Changes text color to black on hover */
 }
 
 /* Scroll Section - Smooth Scrolling */
@@ -101,7 +121,9 @@ body {
 }
 
 /* Ensure text glows initially for the Homepage */
-.hero-section h1, .hero-section p, .scroll-section {
+.hero-section h1,
+.hero-section p,
+.scroll-section {
   color: white;
   font-size: 1.5rem;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.4), 0 0 5px rgba(255, 255, 255, 0.3);
@@ -112,6 +134,31 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .projects-container {
   display: flex;
@@ -124,13 +171,16 @@ body {
 
 .project-card {
   padding: 20px;
-  margin-left: 40px; /* Space between date and project card */
+  margin-left: 40px;
+  /* Space between date and project card */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 100%; /* Ensure the project card takes full width */
-  position: relative; /* Set position to relative for absolute positioning of child elements */
+  width: 100%;
+  /* Ensure the project card takes full width */
+  position: relative;
+  /* Set position to relative for absolute positioning of child elements */
 }
 
 .project-card:hover {
@@ -140,15 +190,18 @@ body {
 
 /* Color coding */
 .project-card.android {
-  border-left: 5px solid green; /* Green for Android apps */
+  border-left: 5px solid green;
+  /* Green for Android apps */
 }
 
 .project-card.website {
-  border-left: 5px solid blue; /* Blue for websites */
+  border-left: 5px solid blue;
+  /* Blue for websites */
 }
 
 .project-card.backend {
-  border-left: 5px solid red; /* Red for backend projects */
+  border-left: 5px solid red;
+  /* Red for backend projects */
 }
 
 .project-name {
@@ -169,7 +222,8 @@ body {
 
 .project-license {
   font-size: 0.85rem;
-  color: #ffcc00; /* Highlight license */
+  color: #ffcc00;
+  /* Highlight license */
 }
 
 .timeline {
@@ -180,63 +234,92 @@ body {
 .timeline::before {
   content: '';
   position: absolute;
-  left: 20px; /* Adjust this value to move the line to the left */
+  left: 20px;
+  /* Adjust this value to move the line to the left */
   top: 0;
   bottom: 0;
-  width: 2px; /* Line width */
-  background: #cccccc; /* Line color */
+  width: 2px;
+  /* Line width */
+  background: #cccccc;
+  /* Line color */
 }
 
 .timeline-item {
   position: relative;
   display: flex;
-  align-items: flex-start; /* Align items to the start */
+  align-items: flex-start;
+  /* Align items to the start */
   margin: 20px 0;
 }
 
 .timeline-date {
   position: absolute;
-  left: -120px; /* Adjust as needed for spacing */
-  top: 20px; /* Adjust as needed for spacing */
+  left: -120px;
+  /* Adjust as needed for spacing */
+  top: 20px;
+  /* Adjust as needed for spacing */
   font-size: 0.9rem;
   color: #cccccc;
 }
 
 .btn-small {
-  padding: 5px 10px; /* Smaller padding */
-  font-size: 0.8rem; /* Smaller font size */
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  text-align: center; /* Center text */
-  transition: background-color 0.3s; /* Smooth transition */
+  padding: 5px 10px;
+  /* Smaller padding */
+  font-size: 0.8rem;
+  /* Smaller font size */
+  background-color: #007bff;
+  /* Bootstrap primary color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* No border */
+  border-radius: 5px;
+  /* Rounded corners */
+  text-align: center;
+  /* Center text */
+  transition: background-color 0.3s;
+  /* Smooth transition */
 }
 
 .btn-small:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
+  /* Darker shade on hover */
 }
 
 .github-link {
-  position: absolute; /* Position the link absolutely */
-  top: 10px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
-  z-index: 1; /* Ensure it appears above other content */
+  position: absolute;
+  /* Position the link absolutely */
+  top: 10px;
+  /* Adjust the top position as needed */
+  right: 10px;
+  /* Adjust the right position as needed */
+  z-index: 1;
+  /* Ensure it appears above other content */
 }
 
 .btn-github {
   display: inline-block;
-  padding: 5px 10px; /* Padding for the button */
-  font-size: 0.9rem; /* Font size */
-  background-color: #24292e; /* GitHub dark color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  padding: 5px 10px;
+  /* Padding for the button */
+  font-size: 0.9rem;
+  /* Font size */
+  background-color: #24292e;
+  /* GitHub dark color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* No border */
+  border-radius: 5px;
+  /* Rounded corners */
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition */
 }
 
 .btn-github:hover {
-  background-color: #3b4045; /* Lighter shade n hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #3b4045;
+  /* Lighter shade n hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
 }
