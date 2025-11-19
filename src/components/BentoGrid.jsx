@@ -51,7 +51,7 @@ const projects = [
         description: "This website.",
         tags: ["React", "Tailwind"],
         link: "https://github.com/nikhiltiwari0/portfolio",
-        colSpan: "col-span-1",
+        colSpan: "col-span-1 md:col-span-3",
     },
 ];
 
@@ -70,40 +70,44 @@ const BentoGrid = () => {
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
                     {projects.map((project, idx) => (
-                        <Spotlight
+                        <a
                             key={idx}
-                            className={`group flex flex-col justify-between p-8 ${project.colSpan}`}
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`block ${project.colSpan}`}
                         >
-                            <div>
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className="flex gap-2">
-                                        {project.tags.map((tag) => (
-                                            <span
-                                                key={tag}
-                                                className="rounded-full border border-neutral-800 bg-neutral-900 px-3 py-1 text-xs text-neutral-400"
-                                            >
-                                                {tag}
-                                            </span>
-                                        ))}
+                            <Spotlight
+                                className="group flex h-full flex-col justify-between p-8"
+                            >
+                                <div>
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex gap-2">
+                                            {project.tags.map((tag) => (
+                                                <span
+                                                    key={tag}
+                                                    className="rounded-full border border-neutral-800 bg-neutral-900 px-3 py-1 text-xs text-neutral-400"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                        <div
+                                            className="text-neutral-500 hover:text-white transition-colors"
+                                        >
+                                            <FaGithub size={20} />
+                                        </div>
                                     </div>
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-neutral-500 hover:text-white transition-colors"
-                                    >
-                                        <FaGithub size={20} />
-                                    </a>
+
+                                    <h3 className="mb-2 text-3xl font-bold text-white">{project.name}</h3>
+                                    <p className="text-neutral-400">{project.description}</p>
                                 </div>
 
-                                <h3 className="mb-2 text-3xl font-bold text-white">{project.name}</h3>
-                                <p className="text-neutral-400">{project.description}</p>
-                            </div>
-
-                            <div className="mt-8 flex items-center gap-2 text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
-                                View Project <FaExternalLinkAlt size={12} />
-                            </div>
-                        </Spotlight>
+                                <div className="mt-8 flex items-center gap-2 text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
+                                    View Project <FaExternalLinkAlt size={12} />
+                                </div>
+                            </Spotlight>
+                        </a>
                     ))}
                 </div>
             </div>

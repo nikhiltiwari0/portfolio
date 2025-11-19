@@ -25,12 +25,13 @@ const Hero = () => {
                     transition={{ duration: 1, ease: "circOut" }}
                     className="relative z-10 text-center"
                 >
-                    <h1 className="text-[12vw] font-black leading-none tracking-tighter text-white mix-blend-difference md:text-[10vw]">
+                    <h1 className="text-[12vw] font-black leading-none tracking-tight text-white mix-blend-difference md:text-[10vw]">
                         NIKHIL
-                        <br />
+                    </h1>
+                    <h1 className="text-[12vw] font-black leading-none tracking-tight text-white mix-blend-difference md:text-[10vw] ml-1">
                         TIWARI
                     </h1>
-                    <p className="mt-8 text-xl font-light tracking-widest text-neutral-400 md:text-2xl">
+                    <p className="mt-8 text-xl font-light tracking-widest text-neutral-400 md:text-2xl self-center">
                         SOFTWARE ENGINEER
                     </p>
                 </motion.div>

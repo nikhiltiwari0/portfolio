@@ -1,10 +1,11 @@
 /* General Body Styling */
 body {
-  background-color: #111111;
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .pdf-viewer-container {
@@ -131,9 +132,16 @@ body {
 }
 
 /* Tailwind CSS Integration */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide default cursor globally to use custom cursor */
+* {
+  cursor: none !important;
+}
 
 html.lenis,
 html.lenis body {
