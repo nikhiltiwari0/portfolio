@@ -25,7 +25,7 @@ const Contact = () => {
                         </div>
                         <span className="text-sm uppercase tracking-widest">GitHub</span>
                     </a>
-                    <a href="https://linkedin.com/in/nikhil-tiwari-094b2231a/" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2 text-neutral-500 transition-colors hover:text-white">
+                    <a href="https://linkedin.com/in/nikhiltiwari0/" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2 text-neutral-500 transition-colors hover:text-white">
                         <div className="rounded-full border border-neutral-800 bg-neutral-900 p-4 transition-transform group-hover:scale-110 group-hover:bg-white group-hover:text-black">
                             <FaLinkedin size={24} />
                         </div>
