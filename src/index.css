@@ -133,13 +133,20 @@ body {
 
 /* Tailwind CSS Integration */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Hide default cursor globally to use custom cursor */
-* {
+/* Monospace font for version selector */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Custom cursor only on portfolio pages (not version selector) */
+.cursor-none,
+.cursor-none * {
   cursor: none !important;
 }
 
