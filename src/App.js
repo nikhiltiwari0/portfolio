@@ -6,6 +6,7 @@ import V1Archive from "./versions/v1/index";
 import V2Archive from "./versions/v2/index";
 import V3Archive from "./versions/v3/index";
 import V4Portfolio from "./versions/v4/V4Portfolio";
+import V5Ascii from "./versions/v5/index";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         
         {/* Current Version */}
         <Route path="/v4" element={<V4Portfolio />} />
+        <Route path="/v5" element={<V5Ascii />} />
         
         {/* Fallback */}
         <Route path="*" element={<VersionSelector />} />

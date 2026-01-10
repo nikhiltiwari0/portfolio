@@ -3,12 +3,20 @@
 
 export const portfolioVersions = [
   {
+    id: "v5",
+    name: "ASCII",
+    date: "Jan 2026",
+    commitHash: "UNCOMMIT",
+    commitUrl: "https://github.com/nikhiltiwari0/portfolio",
+    isCurrent: true,
+  },
+  {
     id: "v4",
     name: "Genesis",
     date: "Nov 2025",
     commitHash: "0166187",
     commitUrl: "https://github.com/nikhiltiwari0/portfolio/commit/0166187",
-    isCurrent: true,
+    isCurrent: false,
   },
   {
     id: "v3",
