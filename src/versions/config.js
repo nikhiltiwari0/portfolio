@@ -6,7 +6,7 @@ export const portfolioVersions = [
     id: "v5",
     name: "ASCII",
     date: "Jan 2026",
-    commitHash: "UNCOMMIT",
+    commitHash: "latest",
     commitUrl: "https://github.com/nikhiltiwari0/portfolio",
     isCurrent: true,
   },
