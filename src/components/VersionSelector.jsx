@@ -1,10 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { portfolioVersions } from "../versions/config";
 
 const VersionSelector = () => {
   const navigate = useNavigate();
-  const [themeMode, setThemeMode] = useState("light");
+  
+  // Load theme from localStorage or default to "light"
+  const [themeMode, setThemeMode] = useState(() => {
+    const saved = localStorage.getItem("portfolio-theme");
+    if (saved) return saved;
+    // Check system preference as fallback
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  });
+  
+  // Save theme to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("portfolio-theme", themeMode);
+  }, [themeMode]);
+  
   const isDark = themeMode === "dark";
 
   const side = isDark
