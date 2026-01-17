@@ -140,7 +140,6 @@ export const v5Skills = [
 ];
 
 export const v5Videos = [
-  { id: "mym_big", label: "meet yo maker", file: "/videos/mym_big.mp4" },
   {
     id: "iloveuihateu",
     label: "iloveuihateu",
@@ -163,5 +162,15 @@ export const v5Videos = [
     id: "ALLTHEFUNDS",
     label: "all the funds",
     file: "/videos/ALLTHEFUNDS.mp4",
+  },
+  {
+    id: "mym_small",
+    label: "meet yo maker",
+    file: "/videos/mym_small.mp4",
+  },
+  {
+    id: "ken_carson_mdma",
+    label: "mdma",
+    file: "/videos/Ken Carson - MDMA ft. Destroy Lonely (Official Music Video) - KenCarsonVEVO (1080p, h264) (1).mp4".replace(/ /g, "%20"),
   },
 ];
