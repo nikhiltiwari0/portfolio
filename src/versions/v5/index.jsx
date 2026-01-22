@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { v5About, v5Profile, v5Projects, v5Skills, v5Videos, v5Work } from "./data";
+import { v5About, v5Profile, v5Projects, v5Skills, v5Work } from "./data";
 
 import AsciiVideoPlayer from "./AsciiVideoPlayer";
 import { useNavigate } from "react-router-dom";
@@ -249,7 +249,7 @@ keys:
                       { key: "2", label: "work", val: "work" },
                       { key: "3", label: "projects", val: "projects" },
                       { key: "4", label: "contact", val: "contact" },
-                      { key: "v", label: "mvs", val: "video" },
+                      // { key: "v", label: "mvs", val: "video" },
                       { key: "h", label: "help", val: "help" },
                     ].map((m) => (
                       <button
@@ -304,14 +304,14 @@ keys:
                 </div>
               </div>
 
-              {/* Content area */}
+              {/* Content area
               {view === "video" ? (
                 <AsciiVideoPlayer videos={v5Videos} cols={100} rows={36} fps={12} />
               ) : (
                 <div className="text-xs sm:text-sm">
                   {renderBodyContent()}
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

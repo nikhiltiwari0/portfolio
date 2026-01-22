@@ -120,7 +120,7 @@ export const v5Projects = [
     ],
   },
   {
-    name: "a lot more",
+    name: "many more",
     note: "checkout my github for more",
     links: [{ label: "github", url: "https://github.com/nikhiltiwari0" }],
   },
@@ -139,38 +139,38 @@ export const v5Skills = [
   "redis",
 ];
 
-export const v5Videos = [
-  {
-    id: "iloveuihateu",
-    label: "iloveuihateu",
-    file: "/videos/iloveuihateu.mp4",
-  },
-  { id: "cashshit", label: "cash shit", file: "/videos/cashshit.mp4" },
-  {
-    id: "CARTIERUZICARTI1629V2",
-    label: "1629 v2",
-    file: "/videos/CARTIERUZICARTI1629V2.mp4",
-  },
-  { id: "cartiALLRED", label: "all red", file: "/videos/cartiALLRED.mp4" },
-  {
-    id: "HEARDYALLGETTINGMONEY",
-    label: "getting money",
-    file: "/videos/HEARDYALLGETTINGMONEY.mp4",
-  },
-  { id: "backdooramf", label: "backdoor", file: "/videos/backdooramf.mp4" },
-  {
-    id: "ALLTHEFUNDS",
-    label: "all the funds",
-    file: "/videos/ALLTHEFUNDS.mp4",
-  },
-  {
-    id: "mym_small",
-    label: "meet yo maker",
-    file: "/videos/mym_small.mp4",
-  },
-  {
-    id: "ken_carson_mdma",
-    label: "mdma",
-    file: "/videos/Ken Carson - MDMA ft. Destroy Lonely (Official Music Video) - KenCarsonVEVO (1080p, h264) (1).mp4".replace(/ /g, "%20"),
-  },
-];
+// export const v5Videos = [
+//   {
+//     id: "iloveuihateu",
+//     label: "iloveuihateu",
+//     file: "/videos/iloveuihateu.mp4",
+//   },
+//   { id: "cashshit", label: "cash shit", file: "/videos/cashshit.mp4" },
+//   {
+//     id: "CARTIERUZICARTI1629V2",
+//     label: "1629 v2",
+//     file: "/videos/CARTIERUZICARTI1629V2.mp4",
+//   },
+//   { id: "cartiALLRED", label: "all red", file: "/videos/cartiALLRED.mp4" },
+//   {
+//     id: "HEARDYALLGETTINGMONEY",
+//     label: "getting money",
+//     file: "/videos/HEARDYALLGETTINGMONEY.mp4",
+//   },
+//   { id: "backdooramf", label: "backdoor", file: "/videos/backdooramf.mp4" },
+//   {
+//     id: "ALLTHEFUNDS",
+//     label: "all the funds",
+//     file: "/videos/ALLTHEFUNDS.mp4",
+//   },
+//   {
+//     id: "mym_small",
+//     label: "meet yo maker",
+//     file: "/videos/mym_small.mp4",
+//   },
+//   {
+//     id: "ken_carson_mdma",
+//     label: "mdma",
+//     file: "/videos/Ken Carson - MDMA ft. Destroy Lonely (Official Music Video) - KenCarsonVEVO (1080p, h264) (1).mp4".replace(/ /g, "%20"),
+//   },
+// ];
