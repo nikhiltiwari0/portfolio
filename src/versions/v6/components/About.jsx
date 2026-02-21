@@ -35,11 +35,23 @@ const About = () => {
                             className="text-base md:text-lg font-dm text-[#888888] leading-relaxed relative z-10"
                         >
                             <p className="mb-6">
-                                I engineer agentic workflows and construct RL environments at <strong className="text-[#f7f7f7] font-normal border-b border-[#ff0f39] pb-0.5">AfterQuery</strong>.
-                                Beyond traditional software development, I am focused on the bleeding edge of intelligent systems, building infrastructure that learns, adapts, and scales.
+                                hey, i'm nikhil.
+                            </p>
+                            <p className="mb-6">
+                                i'm a junior at uw-madison studying cs. i like building
+                                and shipping quality software efficiently.
+                            </p>
+                            <p className="mb-6">
+                                started with a basic html site back in 2018. since then
+                                i've shipped android apps, built full-stack platforms,
+                                and gone deep into ai/ml.
+                            </p>
+                            <p className="mb-6">
+                                currently interning at <strong className="text-[#f7f7f7] font-normal border-b border-[#ff0f39] pb-0.5">afterquery</strong> working on evaluation infrastructure for ai agents.
                             </p>
                             <p>
-                                I'm also a junior at UW-Madison with a deep track record of shipping full-stack products, mobile apps, and high-performance ML models.
+                                when i'm not coding, i'm probably listening to music,
+                                at the gym, or hanging with friends.
                             </p>
                         </motion.div>
 

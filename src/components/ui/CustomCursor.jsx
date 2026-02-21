@@ -34,7 +34,7 @@ const CustomCursor = () => {
 
     return (
         <motion.div
-            className="pointer-events-none fixed left-0 top-0 z-50 mix-blend-difference"
+            className="pointer-events-none fixed left-0 top-0 z-[9999] mix-blend-difference"
             animate={{
                 x: mousePosition.x,
                 y: mousePosition.y,
