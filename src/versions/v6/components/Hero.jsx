@@ -78,7 +78,7 @@ const Hero = () => {
                     <a href="https://linkedin.com/in/nikhiltiwari0" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
                         [ LINKEDIN ]
                     </a>
-                    <a href="mailto:nikhil@afterquery.com" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
+                    <a href="mailto:tiwarin9211@gmail.com" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
                         [ EMAIL ]
                     </a>
                 </motion.div>
