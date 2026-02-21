@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { v5About, v5Profile, v5Projects, v5Skills, v5Work } from "./data";
 
-import AsciiVideoPlayer from "./AsciiVideoPlayer";
 import { useNavigate } from "react-router-dom";
 
 function mulberry32(seed) {
@@ -304,14 +303,10 @@ keys:
                 </div>
               </div>
 
-              {/* Content area
-              {view === "video" ? (
-                <AsciiVideoPlayer videos={v5Videos} cols={100} rows={36} fps={12} />
-              ) : (
-                <div className="text-xs sm:text-sm">
-                  {renderBodyContent()}
-                </div>
-              )} */}
+              {/* Content area */}
+              <div className="text-xs sm:text-sm">
+                {renderBodyContent()}
+              </div>
             </div>
           </div>
         </div>
