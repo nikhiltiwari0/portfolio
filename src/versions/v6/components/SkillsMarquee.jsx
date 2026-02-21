@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const SkillsMarquee = () => {
     const skills = [
-        "React", "TypeScript", "Next.js", "Python", "Tailwind", "C++", "Java",
-        "Node.js", "AI/ML", "AWS", "Docker", "Git", "Framer Motion", "MongoDB"
+        "PyTorch", "TensorFlow", "Ray", "RLlib", "HuggingFace", "Python", "CUDA",
+        "Kubernetes", "GCP", "Agentic Workflows", "Vector DBs", "C++", "React"
     ];
 
     // Duplicate array to ensure seamless loop
@@ -24,7 +24,7 @@ const SkillsMarquee = () => {
                 >
                     {duplicatedSkills.map((skill, index) => (
                         <div key={index} className="flex items-center gap-8">
-                            <span className="font-syne text-5xl md:text-8xl font-black uppercase text-transparent text-outline hover:text-[#f7f7f7] hover:[-webkit-text-stroke:0px] transition-all duration-300">
+                            <span className="font-syne text-5xl md:text-8xl font-black uppercase text-[#444] hover:text-[#f7f7f7] transition-colors duration-300">
                                 {skill}
                             </span>
                             <span className="text-[#ff0f39] text-3xl">✸</span>

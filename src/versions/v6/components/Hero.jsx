@@ -31,23 +31,23 @@ const Hero = () => {
                 style={{ opacity: opacityContent, scale: scaleContent }}
                 className="relative z-10 w-full max-w-[90vw] mx-auto flex flex-col items-start px-4 md:px-12 pointer-events-none"
             >
-                <div className="overflow-hidden">
+                <div className="overflow-visible">
                     <motion.h1
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                        className="font-syne font-extrabold text-[15vw] leading-[0.8] tracking-tighter text-[#f7f7f7] uppercase"
+                        className="font-syne font-extrabold text-[13vw] md:text-[14vw] leading-[0.8] tracking-tighter text-[#f7f7f7] uppercase"
                     >
                         Nikhil
                     </motion.h1>
                 </div>
 
-                <div className="overflow-hidden ml-0 md:ml-[15vw] mt-2">
+                <div className="overflow-visible ml-0 md:ml-[15vw] mt-2">
                     <motion.h1
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                        className="font-syne font-extrabold text-[15vw] leading-[0.8] tracking-tighter text-transparent text-outline uppercase"
+                        className="font-syne font-extrabold text-[13vw] md:text-[14vw] leading-[0.8] tracking-tighter text-transparent text-outline uppercase"
                     >
                         Tiwari
                     </motion.h1>
@@ -66,24 +66,6 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
 
-            {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
-                className="absolute bottom-12 left-12 flex flex-col items-center gap-4 mix-blend-difference pointer-events-none"
-            >
-                <span className="font-mono tracking-[0.2em] text-[10px] uppercase rotate-90 origin-left text-[#f7f7f7] whitespace-nowrap mb-8 translate-x-1/2">
-                    Scroll
-                </span>
-                <div className="w-[1px] h-12 bg-[#333333] overflow-hidden relative">
-                    <motion.div
-                        animate={{ y: ["-100%", "100%"] }}
-                        transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-                        className="absolute inset-0 w-full h-full bg-[#ff0f39]"
-                    ></motion.div>
-                </div>
-            </motion.div>
         </section>
     );
 };

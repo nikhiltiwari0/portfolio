@@ -11,13 +11,13 @@ const projects = [
     {
         name: "AI Resume Gen",
         tags: ["Python", "AI", "React"],
-        href: "#",
+        href: "https://github.com/nikhiltiwari0/AIResumeGen",
         metrics: { epochs: 500, loss: 0.12, reward: 72.4 }
     },
     {
         name: "Geoguessr ML",
         tags: ["Python", "CV", "ML"],
-        href: "#",
+        href: "https://github.com/nikhiltiwari0/geoguessr_ai",
         metrics: { epochs: 2500, loss: 0.012, reward: 96.8 }
     }
 ];
