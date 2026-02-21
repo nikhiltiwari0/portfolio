@@ -46,7 +46,7 @@ const About = () => {
                         {/* Experience List - Minimal Style */}
                         <div className="flex flex-col border-t border-[#333333] relative z-10">
                             {[
-                                { company: "AfterQuery", role: "Software Engineer (AI/RL)", year: "2025" },
+                                { company: "AfterQuery", role: "Software Engineer (AI/RL)", year: "2026" },
                                 { company: "Milliman", role: "Software Dev Intern", year: "2025" },
                                 { company: "BeReal.", role: "Software Engineer Intern", year: "2025" },
                                 { company: "Taro (YC S22)", role: "Software Engineer Intern", year: "2024" }
