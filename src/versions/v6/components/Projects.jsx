@@ -70,7 +70,7 @@ const Projects = () => {
                                         animate={{ opacity: 1, x: 0 }}
                                         exit={{ opacity: 0, x: 20 }}
                                         transition={{ duration: 0.3 }}
-                                        className="absolute right-0 top-1/2 -translate-y-1/2 hidden md:flex items-center text-[#ff0f39] font-mono text-sm tracking-widest z-10 pr-8 pointer-events-none"
+                                        className="absolute right-0 bottom-16 translate-y-2 hidden md:flex items-center text-[#ff0f39] font-mono text-sm tracking-widest z-10 pr-8 pointer-events-none"
                                     >
                                         [REWARD_RATE: {proj.metrics.reward}]
                                     </motion.div>

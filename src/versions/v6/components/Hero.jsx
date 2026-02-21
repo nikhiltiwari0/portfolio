@@ -36,7 +36,7 @@ const Hero = () => {
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                        className="font-syne font-extrabold text-[13vw] md:text-[14vw] leading-[0.8] tracking-tighter text-[#f7f7f7] uppercase"
+                        className="font-syne font-extrabold text-[12vw] md:text-[13vw] leading-[0.8] tracking-tighter text-[#f7f7f7] uppercase"
                     >
                         Nikhil
                     </motion.h1>
@@ -47,7 +47,7 @@ const Hero = () => {
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                        className="font-syne font-extrabold text-[13vw] md:text-[14vw] leading-[0.8] tracking-tighter text-transparent text-outline uppercase"
+                        className="font-syne font-extrabold text-[12vw] md:text-[13vw] leading-[0.8] tracking-tighter text-transparent text-outline uppercase pr-4 md:pr-8"
                     >
                         Tiwari
                     </motion.h1>
@@ -63,6 +63,24 @@ const Hero = () => {
                     <p className="font-dm uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-sm text-[#888888] font-bold">
                         Software Engineer // Agentic Workflows
                     </p>
+                </motion.div>
+
+                {/* Social Links */}
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 1 }}
+                    className="mt-8 flex items-center gap-6 md:gap-8 ml-0 md:ml-[72px] pointer-events-auto"
+                >
+                    <a href="https://github.com/nikhiltiwari0" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
+                        [ GITHUB ]
+                    </a>
+                    <a href="https://linkedin.com/in/nikhiltiwari0" target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
+                        [ LINKEDIN ]
+                    </a>
+                    <a href="mailto:nikhil@afterquery.com" className="font-mono text-xs text-[#555] hover:text-[#f7f7f7] transition-colors uppercase tracking-widest cursor-crosshair">
+                        [ EMAIL ]
+                    </a>
                 </motion.div>
             </motion.div>
 
