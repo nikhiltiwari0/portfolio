@@ -3,12 +3,20 @@
 
 export const portfolioVersions = [
   {
-    id: "v6",
-    name: "Agentic",
-    date: "Feb 2026",
+    id: "v7",
+    name: "Clean",
+    date: "Mar 2026",
     commitHash: "latest",
     commitUrl: "https://github.com/nikhiltiwari0/portfolio",
     isCurrent: true,
+  },
+  {
+    id: "v6",
+    name: "Agentic",
+    date: "Feb 2026",
+    commitHash: "61c1bbe",
+    commitUrl: "https://github.com/nikhiltiwari0/portfolio/commit/61c1bbe",
+    isCurrent: false,
   },
   {
     id: "v5",

@@ -8,13 +8,18 @@ import V3Archive from "./versions/v3/index";
 import V4Portfolio from "./versions/v4/V4Portfolio";
 import V5Ascii from "./versions/v5/index";
 import V6Portfolio from "./versions/v6/V6Portfolio";
+import V7Portfolio from "./versions/v7/V7Portfolio";
+import V7Experience from "./versions/v7/V7Experience";
+import V7Projects from "./versions/v7/V7Projects";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Current Version - Landing Page */}
-        <Route path="/" element={<V6Portfolio />} />
+        {/* Current Version */}
+        <Route path="/" element={<V7Portfolio />} />
+        <Route path="/experience" element={<V7Experience />} />
+        <Route path="/projects" element={<V7Projects />} />
 
         {/* Archived Versions */}
         <Route path="/v0" element={<V0Archive />} />
@@ -22,7 +27,8 @@ function App() {
         <Route path="/v2" element={<V2Archive />} />
         <Route path="/v3" element={<V3Archive />} />
 
-        {/* Current Version */}
+        {/* Previous Versions */}
+        <Route path="/v7" element={<V7Portfolio />} />
         <Route path="/v6" element={<V6Portfolio />} />
         <Route path="/v5" element={<V5Ascii />} />
         <Route path="/v4" element={<V4Portfolio />} />
