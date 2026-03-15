@@ -46,6 +46,16 @@ const V7Projects = () => (
 
 const projects = [
   {
+    name: "AgentArena",
+    description: "Distributed RL evaluation framework with custom Gymnasium environments",
+    stat: "1K+ episodes/hr",
+  },
+  {
+    name: "PokerRL",
+    description: "Multi-agent poker AI using CFR and deep value networks for equilibrium solving",
+    stat: "500K+ hands/hr",
+  },
+  {
     name: "SharedAI",
     url: "https://shared-ai.vercel.app/",
     description: "Real-time collaborative AI platform",

@@ -54,7 +54,7 @@ const experiences = [
       "250% faster data transfer via high-concurrency SFTP with low-level network and I/O optimizations. GenAI pipeline processing 55M+ healthcare records, reducing delivery from 10 days to 20 minutes. C extension for a critical Python module, cutting pipeline latency 80%.",
   },
   {
-    company: "Taro (YC S22)",
+    company: "Taro (acq. by Handshake)",
     role: "Software Engineer Intern",
     date: "2024",
     description:
