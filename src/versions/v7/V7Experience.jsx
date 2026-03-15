@@ -40,18 +40,18 @@ const experiences = [
       "Built sandboxed RL environments with automated pass@k scoring across 14+ frontier models. 600 concurrent agent trajectories on GKE with isolated execution via Daytona. Hybrid retrieval (kNN + BM25, 3072-dim embeddings) over 100k+ entities at sub-second latency. Eval systems used by Google, OpenAI, and Anthropic.",
   },
   {
-    company: "Milliman",
-    role: "Software Development Intern",
-    date: "2025",
-    description:
-      "250% faster data transfer via high-concurrency SFTP with low-level network and I/O optimizations. GenAI pipeline processing 55M+ healthcare records, reducing delivery from 10 days to 20 minutes. C extension for a critical Python module, cutting pipeline latency 80%.",
-  },
-  {
     company: "BeReal.",
     role: "Software Engineer Intern",
     date: "2025",
     description:
       "Backend systems for Cantum, a social music app built with Voodoo. Track forking, versioning, and collaborative editing with generative music APIs. Firebase real-time sync. Selected from 20 student teams. 30% increase in early retention.",
+  },
+  {
+    company: "Milliman",
+    role: "Software Development Intern",
+    date: "2025",
+    description:
+      "250% faster data transfer via high-concurrency SFTP with low-level network and I/O optimizations. GenAI pipeline processing 55M+ healthcare records, reducing delivery from 10 days to 20 minutes. C extension for a critical Python module, cutting pipeline latency 80%.",
   },
   {
     company: "Taro (YC S22)",
